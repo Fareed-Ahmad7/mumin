@@ -34,7 +34,9 @@ internal fun updateAppWidget(
     appWidgetManager: AppWidgetManager,
     appWidgetId: Int
 ) {
-    val widgetText = context.getString(R.string.appwidget_text)
+//    val widgetText = context.getString(R.string.appwidget_text)
+    val message = "so let not the worldly life"
+    val widgetText = message
     // Construct the RemoteViews object
     val views = RemoteViews(context.packageName, R.layout.mumin)
     views.setTextViewText(R.id.appwidget_text, widgetText)
